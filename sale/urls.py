@@ -5,6 +5,6 @@ from .views import Hello
 
 admin.autodiscover()
 urlpatterns = patterns(
-    '',
-    url(r'^(\w+)/$', Hello.as_view(), name='weixin_entry'),
+	'',
+	url(r'^$', Hello.as_view(), name='weixin_entry'),
 )
