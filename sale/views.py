@@ -4,7 +4,9 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http.response import HttpResponse
 from django.core.exceptions import PermissionDenied
 import hashlib
-
+'''
+api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET
+'''
 class Hello(View):
 	token = "shucaiyao"
 	@csrf_exempt
